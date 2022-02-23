@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+}
+
+.hover-button{
+  border-radius: 25px;
+  padding: 16px;
+  border-color: #7D0202;
+  color: #ae0101;
+
+}
+.hover-button:hover{
+  color: #F21616;
+}
+
+.hover-button::after{
+  color: #ae0101;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  color: white;
+  font-family: "Georgia", serif;
+}
+
+.link{
+  color: #ae0101;
+}
+
+.link:hover{
+  color: #F21616;
+}
+
+.link:visited{
+  color: #ae0101;
+}
