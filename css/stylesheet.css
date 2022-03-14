@@ -9,7 +9,6 @@
 body{
   background-color:black;
 
-
 }
 
 
@@ -54,15 +53,15 @@ body{
     font-family: "Georgia", serif;
   }
 
-  .link{
+  a:link{
     color: #ae0101;
   }
 
-  .link:hover{
+  a:hover{
     color: #F21616;
   }
 
-  .link:visited{
+  a:visited{
     color: #ae0101;
   }
   img{
