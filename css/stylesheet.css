@@ -6,7 +6,11 @@
   body{
     background-color: black;
   }
+body{
+  background-color:black;
 
+
+}
 
 
 
@@ -131,6 +135,8 @@
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  grid-column:1;
+  grid-row: 2/3;
 }
   p,h1,h2,h3,h4,h5,h6{
     color: white;
