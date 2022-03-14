@@ -1,7 +1,14 @@
+
+
+
+
 @media screen and (min-width:400px){
   body{
     background-color: black;
   }
+
+
+
 
   .hover-button{
     border-radius: 25px;
@@ -17,6 +24,23 @@
   .hover-button::after{
     color: #ae0101;
   }
+
+  #navbar {
+  overflow: hidden;
+  border-color: #ae0101;
+
+}
+
+
+#navbar a {
+  border-color: #ae0101;
+  float: right;
+  display: block;
+  color: #F21616;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
  .refrence{
    color: white;
    font-family: "Georgia", serif;
@@ -58,11 +82,12 @@
     grid-column: 1 ;
     grid-row: 2 / 4 ;
   }
-  .nav{
+
+ .nav{
      grid-column:2/4;
      grid-row:1;
      border-style: solid;
-     colro:white;
+     color:white;
      border-color:  #ae0101;
 
   }
@@ -91,7 +116,22 @@
   .hover-button::after{
     color: #ae0101;
   }
+  #navbar {
+  overflow: hidden;
+  border-color: #ae0101;
 
+}
+
+
+#navbar a {
+  border-color: #ae0101;
+  float: right;
+  display: block;
+  color: #F21616;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
   p,h1,h2,h3,h4,h5,h6{
     color: white;
     font-family: "Georgia", serif;
