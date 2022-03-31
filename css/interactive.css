@@ -1,0 +1,22 @@
+h1{ font-weght:300;}
+strong{font-weight:900;}
+
+button {
+  transition: all 1000ms ease-in-out;
+  font-size: 40 px;
+  background-color: gray;
+}
+
+
+.was-clicked {
+  padding: 20 px;
+  color: white;
+  background-color: #F21616;
+}
+
+.mouse-hover{
+  padding: 20 px;
+  margin: 60 px;
+  border-color:#F21616;
+  color:#F21616;
+}
