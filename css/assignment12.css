@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: black;
+}
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #ae0101;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px
+0 rgba(0,0,0,.12);
+}
+header {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.quotes {
+  padding: 20px 50px;
+  min-height: 200px;
+}
+.quote-text {
+  padding-bottom: 20px;
+  font-size: 25px;
+  color: black;
+}
+.controls {
+  width: 100%;
+  padding: 20px 50px;
+}
+.button {
+  display: block;
+  color: #F21616;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px
+0 rgba(0,0,0,.12);
+}
+.button:active{
+  background: #007a63;
+}
+.button--loading::after{
+  content:"";
+  position:absolute;
+  width: 16px;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  margin:auto;
+  border: 4px solid transparent;
+  border-top-color:#ffffff;
+  border-radius:50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes new-quote-loading-spinner{
+  from{
+    transform: rotate(0turn);
+
+  }
+  to{
+    transform:rotate(1turn);
+  }
+}
+
+.new-quote {
+  background-color: black;
+  margin-bottom: 15px;
+  position:relative;
+  padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+ /*.new-quote:hover {
+  background-color: #5D5C5B;
+} */
+.new-quote:active{
+    background: #5D5C5B;
+}
+/*.new-quote:disabled {
+  background-color: blue;
+  color: blue;
+  cursor: not-allowed;
+}*/
+.new-quote--loading::after{
+  content:"";
+  position:absolute;
+  height: 16px;
+  width: 16px;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  margin:auto;
+  border: 16px solid transparent;
+  border-top-color:#ffffff;
+  border-radius:50%;
+  animation: new-quote-loading-spinner 1s ease infinite;
+}
+@media screen and (max-width: 600px) {
+  .app {
+    width: 100%;
+  }
+  .quote-text {
+    font-size: 18px;
+  }
+}
