@@ -1,17 +1,29 @@
 
-function buttonIsClicked() {
-  document.getElementById('button-1').classList.toggle('was-clicked');
+var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
 }
 
-function buttonHover(){
-    document.getElementById('button-2').classList.toggle('mouse-hover');
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
 }
 
-function windowLoaded(){
-  console.log('loaded ok!');
-  document.getElementById('button-1').addEventListener('click', buttonIsClicked);
-
-  document.getElementById('button-2').addEventListener('mouseover', buttonHover);
-}
-
-window.onload = windowLoaded;
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
