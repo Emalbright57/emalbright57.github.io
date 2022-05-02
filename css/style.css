@@ -1,4 +1,4 @@
-@media screen and (min-width:400px){
+@media screen and (min-width:831px){
   .navbar {
   overflow: hidden;
   background-color: #2E0219;
@@ -251,7 +251,7 @@ p{
 
 }
 
-@media screen and (max-width:399px){
+@media screen and (max-width:830px){
   .navbar {
   overflow: hidden;
   background-color: #2E0219;
@@ -306,7 +306,24 @@ p{
 .content{
   grid-column: 1/2;
 }
+#top, #bottom, #left, #right {
+	background: #2E0219;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 30px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
 
+	#top, #bottom {
+		left: 0; right: 0;
+		height:30px;
+
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
 
 body {
 
